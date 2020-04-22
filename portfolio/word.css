@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+}
+body{
+    background-color: #00FFFF;
+}
+#tekst{
+    font-size: 30px;
+    text-align: center;
+	outline:none;
+	border:none;
+    background-color: #00FFFF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#knop{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: white;
+    color: darkblue;
+}
+#knop:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #00FFFF;
+}
+#person{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* mid section */
+#kop{
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;margin-bottom: 125px;
+}
+#size{
+    width: 75px;
+    height: 30px;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 22px;
+}
+#size:hover{
+    background-color: black;
+    color: #00FFFF;
+    cursor: pointer;
+}
+#family{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    padding-left: 12px;
+    outline: none;
+}
+#family:hover{
+    background-color: black;
+    color: #00FFFF;
+    cursor: pointer;
+}
+#bg{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    padding-left: 33px;
+    outline: none;
+}
+#bg:hover{
+    background-color: black;
+    color: #00FFFF;
+    cursor: pointer;
+}
+#color{
+    height: 30px;
+    border-radius: 25px;
+    outline: none;
+}
+#color:hover{
+    background-color: black;
+    color: #00FFFF;
+    cursor: pointer;
+}
+@media(max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+}

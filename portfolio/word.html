@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word</title>
+    <link rel="stylesheet" href="word.css">
+    <script src="word.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h2 style="color: darkblue;">Type your own text and change it </h3>
+        </div>
+        <div>
+            <input type="text" id="person" minlength="4" maxlength="20">
+            <input type="button" id="knop" value="Change Text" onclick="change_text()">
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="collumn">
+                <p id="kop">Font Size</p>
+                <select name="" id="size" onchange="change_size()">
+                    <option value="10">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                    <option value="28">28</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="69">69</option>
+                </select>
+            </div>
+            <div class="collumn">
+                <p id="kop">Font Family</p>
+                <select name="" id="family" onchange="change_family()">
+                    <option value="">Select Font</option>
+                    <option value="Arial">Arial</option>
+                    <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoue UI</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Trebuchet MS</option>
+                </select>
+            </div>
+            <div class="collumn">
+                <p id="kop">Background Color</p>
+                <select name="" id="bg" onchange="change_bg()">
+                    <option value="">Select Color</option>
+                    <option value="#ff5e6c">Pink</option>
+                    <option value="#9bc400">Light Green</option>
+                    <option value="#39a0ca">Sea Blue</option>
+                    <option value="#ff8928">orange</option>
+                    <option value="#eb1736">Ligh red</option>
+                    <option value="Purple">purple</option>
+                </select>
+            </div>
+            <div class="collumn">
+                <p id="kop">Text Color</p>
+                <select name="" id="color" onchange="change_color()">
+                    <option value="">Select Color</option>
+                    <option value="#006400">Dark Green</option>
+                    <option value="#9400D3">Dark violet</option>
+                    <option value="#FFFFFF">White</option>
+                    <option value="#B226FF">Purple</option> 
+                    <option value="#000099">Dark Blue</option>
+                    <option value="red">Red</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="skyblue">Sky Blue</option>
+                </select>
+            </div>
+        </div>
+    <input type="text" id="tekst" value="Change Me Or The site" readonly >
+</body>
+</html>

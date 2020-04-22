@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Header css*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    background-color: rgb(41, 86, 212);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}   
+li{
+    margin-right: 50px;
+    margin-top: 30px;
+    list-style: none;
+    font-size: 20px;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li:hover{
+    color:black;
+    margin-top: 28px;
+}
+.mycv{
+    text-align: center;
+    margin-top: 100px;
+}
+/* all content css*/
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.personalia{
+    height: 250px;
+    width: 300px;
+}
+.line{
+    width: 320px;
+    height: 8px;
+    background-color: rgb(41, 86, 212);
+}   
+.werkervaring{
+    height: 250px;
+    width: 400px;
+}
+.secondline{
+    width: 400px;
+    height: 8px;
+    background-color: rgb(41, 86, 212);
+}
+.werkplek{
+    font-size: 13.25px;
+}
+.werkplek2{
+    margin-top: 18px;
+}
+.werkomschrijving{
+    font-size: 15px;
+}
+/* all the second content css*/
+.content2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.vaardigheden{
+    height: 200px;
+    width: 300px;
+}
+.opleiding{
+    height: 200px;  
+    width: 400px;   
+}
+.opleidingen{
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*all the third content*/
+.content3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 70px;
+}
+.talen{
+    height: 200px;
+    width: 300px;
+}
+.taal{
+    width: 80px;
+    height: 17px;
+    background-color:lightblue;
+    border-color: black;
+}
+.taalnone{
+    width: 80px;
+    height: 17px;
+    background-color:white;
+    border-color: black;
+}
+.lang{
+    display: flex;
+}
+@media(max-width:600px){
+    /*header*/
+    li{
+        margin-right: 13px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    .logo{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    /*content 1*/
+    .mycv{
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 120px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .werkervaring{
+        height: 250px;
+        width: 280px;
+    }
+    /*content 2*/
+    .content2{  
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .opleiding{
+        height: 200px;  
+        width: 280px;   
+    }
+    /*content3 */
+    .content3{  
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .secondline{
+        width: 290px;
+        height: 8px;
+    }
+    .line{
+        width: 290px;
+        height: 8px;
+    }
+    .taal{
+        width: 70px;
+    }
+    .taalnone{
+        width: 70px;
+    }
+}
+@media(min-width:600px){
+    .content{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+    .werkervaring{
+        height: 250px;
+        width: 280px;
+    }
+    .personalia{
+        height: 250px;
+        width: 280px;
+        font-size: 12px;
+    }
+    .werkervaring{
+        font-size: 12px;    
+        margin-right: 20px;
+    }
+    .werkplek{
+        font-size: 12px;
+    }
+    .werkomschrijving{
+        font-size: 12px;
+    }
+    .line{
+        width: 220px;
+        height: 8px;
+    }
+    .secondline{
+        width: 280px;
+        height: 8px;
+    }
+    .mycv{
+        margin-top: 150px;
+    }
+    /*content2*/
+    .content2{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    .opleidingen{
+        font-size: 10px;
+    }
+    .vaardigheden{
+        height: 250px;
+        width: 280px;
+    }
+    .opleiding{
+        height: 250px;
+        width: 280px;
+        margin-right: 20px;
+    }
+    /* conent 3*/
+    .content3{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    .taal{
+        width: 50px;
+        height: 17px;
+        background-color:lightblue;
+        border-color: black;
+    }
+    .taalnone{
+        width: 50px;
+        height: 17px;
+        background-color:white;
+        border-color: black;
+    }
+}
+@media(min-width:1000px){
+    /*content1*/
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    .mycv{
+        margin-top: 110px;
+    }
+    .personalia{
+        font-size: 15px;
+    }
+    .werkervaring{
+        font-size: 13.5px;   
+    }
+    .werkplek{
+        font-size: 13.5px;
+    }
+    .werkomschrijving{
+        font-size: 15px;
+    }
+    .personalia{
+        height: 250px;
+        width: 300px;
+    }
+    .line{
+        width: 320px;
+        height: 8px;
+    }   
+    .werkervaring{
+        height: 250px;
+        width: 400px;
+    }
+    .secondline{
+        width: 400px;
+        height: 8px;
+    }
+    /*second content*/
+    .content2{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+    .vaardigheden{
+        height: 200px;
+        width: 300px;
+        font-size: 15px;
+    }
+    .opleiding{
+        height: 200px;  
+        width: 400px;   
+    }
+    .opleidingen{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    /*content3*/
+    .content3{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 55px;
+    }
+    .talen{
+        height: 200px;
+        width: 300px;
+        font-size: 15px;
+    }
+    .taal{
+        width: 80px;
+        height: 17px;
+    }
+    .taalnone{
+        width: 80px;
+        height: 17px;
+    }
+    .hobbys{
+        font-size: 15px;
+    }
+
+}

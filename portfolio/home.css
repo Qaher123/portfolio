@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body{  
+    background-image: url(black.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}   
+li{
+    margin-right: 50px;
+    margin-top: 30px;
+    list-style: none;
+    font-size: 20px;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li:hover{
+    color: rgb(27, 86, 196);
+    margin-top: 28px;
+}
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+.info{
+    flex: start;
+    width: 400px;
+    font-size: 20px;
+}
+.code{
+    font-size: 25px;
+}
+#array{
+    margin-left: 50px;
+}
+@media(max-width : 600px){
+    li{
+        margin-right: 15px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    .logo{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .info{
+        margin-top: 50px;
+        flex: start;
+        width: 300px;
+        font-size: 15px;
+        margin-left: 50px;
+    }   
+    .code{
+        margin-left: 45px;
+        font-size: 15px;
+    }
+    
+
+}

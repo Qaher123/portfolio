@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rekenmachine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <p class="header">Calculator</p>
+
+        <div class="allButtons">
+            <form action="">
+                <input type="text" id="textview" readonly placeholder="0">
+            </form>
+
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="CE" id="clear" onclick="erase()"></td>
+                    <td><input class="button" type="button" value="C"  id="clear" onclick="back()"></td>
+                    <td><input class="button" type="button" value="/" id="operator" onclick="num('/')"></td>
+                    <td><input class="button" type="button" value="*" id="operator" onclick="num('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" id="number" onclick="num(7)"></td>
+                    <td><input class="button" type="button" value="8" id="number" onclick="num(8)"></td>
+                    <td><input class="button" type="button" value="9" id="number"  onclick="num(9)"></td>
+                    <td><input class="button" type="button" value="-" id="operator" onclick="num('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" id="number" onclick="num(4)"></td>
+                    <td><input class="button" type="button" value="5" id="number" onclick="num(5)"></td>
+                    <td><input class="button" type="button" value="6" id="number"  onclick="num(6)"></td>
+                    <td><input class="button" type="button" value="+" id="operator" onclick="num('+')" ></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" id="number" onclick="num(1)"></td>
+                    <td><input class="button" type="button" value="2" id="number" onclick="num(2)"></td>
+                    <td><input class="button" type="button" value="3" id="number" onclick="num(3)"></td>
+                    <td rowspan="5"><input class="button" type="button" value="=" id="equals" onclick="sum()"></td>
+                </tr>
+                <tr>
+                    <td colspan=2><input class="buttonZero" type="button" value="0"onclick="num(0)" ></td>
+                    <td><input class="button" type="button" value="," id="decimal" onclick="num('.')"></td>
+                </tr>
+            </table>    
+        </div>
+    </div>
+    <a href="project.html" id="projects"><h2>Go back to Projects</h2></a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
